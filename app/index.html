@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Demo Analytics</title>
+    <link rel="stylesheet" href="https://unpkg.com/@vtmn/css" />
+    <link
+      rel="shortcut icon"
+      href="https://punkapi.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5T96NH7");
+    </script>
+    <!-- End Google Tag Manager -->
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      id="punk-singnin"
+      class="vtmn-top-1 vtmn-right-1 vtmn-absolute vtmn-bg-background-brand-primary vtmn-py-2 vtmn-px-4 vtmn-rounded-100 hover:vtmn-shadow-100 vtmn-cursor-pointer"
+      style="color: var(--vtmn-semantic-color_content-primary-reversed)"
+    >
+      sign in
+    </button>
+    <div
+      id="root"
+      class="vtmn-w-full vtmn-h-full vtmn-bg-background-tertiary vtmn-px-4 vtmn-pt-4 vtmn-pb-8 vtmn-flex vtmn-flex-col"
+    >
+      <h1 class="vtmn-typo_title-2 vtmn-ml-2 vtmn-mb-2">Punk API</h1>
+      <ul
+        class="vtmn-w-full vtmn-h-full vtmn-overflow-auto"
+        id="punk-list"
+      ></ul>
+    </div>
+    <script src="./track.js"></script>
+    <script src="./app.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5T96NH7"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
